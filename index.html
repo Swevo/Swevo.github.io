@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta
     name="description"
-    content="The Auto* Suite by Justin Bannister — compile-time .NET source generators for DI, mapping, validation, result handling, query specs, and CQRS dispatch."
+    content="The Auto* Suite by Justin Bannister — compile-time .NET source generators for DI, mapping, validation, result handling, query specs, CQRS dispatch, logging, and HTTP clients."
   />
   <title>The Auto* Suite — Justin Bannister</title>
   <style>
@@ -492,8 +492,8 @@
         <div class="section-heading">
           <h2>A cohesive generator-first product suite</h2>
           <p>
-            Purpose-built packages for dependency injection, mapping, validation, result handling, queries, and CQRS —
-            all sharing the same compile-time, zero-reflection approach.
+            Purpose-built packages for dependency injection, mapping, validation, result handling, queries, CQRS,
+            logging, and HTTP clients — all sharing the same compile-time, zero-reflection approach.
           </p>
         </div>
 
@@ -655,11 +655,59 @@
               <span class="copy-button">copy</span>
             </div>
           </article>
+
+          <article class="suite-card">
+            <div>
+              <div class="meta-label">Logging</div>
+              <h3>AutoLog.Generator</h3>
+            </div>
+            <p>
+              Compile-time high-performance logging — generates <code>LoggerMessage.Define</code> calls from
+              a simple attribute. AOT-safe, zero boilerplate.
+            </p>
+            <div class="attribute-badge"><code>[Log(LogLevel.Information, "Order {OrderId} created")]</code></div>
+            <a href="https://www.nuget.org/packages/AutoLog.Generator" target="_blank" rel="noreferrer">
+              <img src="https://img.shields.io/nuget/v/AutoLog.Generator.svg?style=flat-square&color=7c3aed" alt="AutoLog.Generator NuGet version badge" />
+            </a>
+            <div class="card-links">
+              <a href="https://www.nuget.org/packages/AutoLog.Generator" target="_blank" rel="noreferrer">NuGet</a>
+              <span class="dot">·</span>
+              <a href="https://github.com/Swevo/AutoLog.Generator" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="install-command" onclick="copyCommand('dotnet add package AutoLog.Generator', this)" role="button" tabindex="0" onkeydown="copyOnKey(event, 'dotnet add package AutoLog.Generator', this)">
+              <span class="prompt">$</span>
+              <code>dotnet add package AutoLog.Generator</code>
+              <span class="copy-button">copy</span>
+            </div>
+          </article>
+
+          <article class="suite-card">
+            <div>
+              <div class="meta-label">HTTP clients</div>
+              <h3>AutoHttpClient.Generator</h3>
+            </div>
+            <p>
+              Compile-time typed HTTP client generation — annotate an interface with <code>[HttpClient]</code> and
+              HTTP verb attributes, get a strongly-typed implementation. AOT-safe Refit alternative.
+            </p>
+            <div class="attribute-badge"><code>[HttpClient]</code> / <code>[Get]</code> / <code>[Post]</code></div>
+            <a href="https://www.nuget.org/packages/AutoHttpClient.Generator" target="_blank" rel="noreferrer">
+              <img src="https://img.shields.io/nuget/v/AutoHttpClient.Generator.svg?style=flat-square&color=7c3aed" alt="AutoHttpClient.Generator NuGet version badge" />
+            </a>
+            <div class="card-links">
+              <a href="https://www.nuget.org/packages/AutoHttpClient.Generator" target="_blank" rel="noreferrer">NuGet</a>
+              <span class="dot">·</span>
+              <a href="https://github.com/Swevo/AutoHttpClient.Generator" target="_blank" rel="noreferrer">GitHub</a>
+            </div>
+            <div class="install-command" onclick="copyCommand('dotnet add package AutoHttpClient.Generator', this)" role="button" tabindex="0" onkeydown="copyOnKey(event, 'dotnet add package AutoHttpClient.Generator', this)">
+              <span class="prompt">$</span>
+              <code>dotnet add package AutoHttpClient.Generator</code>
+              <span class="copy-button">copy</span>
+            </div>
+          </article>
         </div>
       </div>
     </section>
-
-    <section id="why-compile-time">
       <div class="container">
         <div class="why-panel">
           <div class="section-heading">
