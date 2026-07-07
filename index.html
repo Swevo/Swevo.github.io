@@ -471,6 +471,7 @@
         <a href="#why-compile-time">Why compile-time?</a>
         <a href="#alternatives">vs AutoMapper / MediatR</a>
         <a href="#more-tools">More tools</a>
+        <a href="#full-catalog">Full catalog</a>
         <a href="https://github.com/Swevo" target="_blank" rel="noreferrer">GitHub</a>
       </nav>
     </div>
@@ -957,6 +958,101 @@
           </div>
         </article>
       </div>
+    </div>
+  </section>
+
+  <section id="full-catalog" style="padding: 2rem 0 4rem;">
+    <div class="container">
+      <div class="section-heading">
+        <h2>Full catalog (60+ packages)</h2>
+        <p>
+          Every package below is free and MIT-licensed. Most Polly* packages add drop-in resilience
+          (retry/timeout/circuit-breaker) for a specific library or service; EFCore.* packages are
+          compile-time EF Core extensions in the same zero-reflection style as the generator suite.
+        </p>
+      </div>
+
+      <details style="margin-top:1rem;">
+        <summary style="cursor:pointer;color:var(--brand-light);font-weight:600;padding:0.5rem 0;">
+          Polly resilience integrations (31 packages) — retry/timeout/circuit-breaker for your stack
+        </summary>
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:1rem;">
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureBlob" style="color:var(--brand-light);">PollyAzureBlob</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Retry/timeout/circuit-breaker for Azure Blob Storage (BlobClient)</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureEventHub" style="color:var(--brand-light);">PollyAzureEventHub</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Event Hubs (EventHubProducerClient)</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureKeyVault" style="color:var(--brand-light);">PollyAzureKeyVault</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Key Vault (SecretClient)</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureQueueStorage" style="color:var(--brand-light);">PollyAzureQueueStorage</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Queue Storage (QueueClient)</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureServiceBus" style="color:var(--brand-light);">PollyAzureServiceBus</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Service Bus sender/receiver</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyAzureTableStorage" style="color:var(--brand-light);">PollyAzureTableStorage</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Table Storage (TableClient)</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyBackoff" style="color:var(--brand-light);">PollyBackoff</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Backoff delay strategies — decorrelated jitter, exponential, linear, constant</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyChaos" style="color:var(--brand-light);">PollyChaos</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Chaos engineering / fault-injection strategies for Polly v8</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyCosmosDb" style="color:var(--brand-light);">PollyCosmosDb</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Azure Cosmos DB container operations</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyDapper" style="color:var(--brand-light);">PollyDapper</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilient Dapper decorator — QueryAsync/ExecuteAsync with retry/timeout/circuit-breaker</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyEFCore" style="color:var(--brand-light);">PollyEFCore</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for every EF Core query and SaveChanges via one DI line</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyElasticsearch" style="color:var(--brand-light);">PollyElasticsearch</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Elastic.Clients.Elasticsearch operations</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyGrpc" style="color:var(--brand-light);">PollyGrpc</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for gRPC .NET clients via Interceptor</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyHangfire" style="color:var(--brand-light);">PollyHangfire</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Hangfire's IBackgroundJobClient</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyHealthChecks" style="color:var(--brand-light);">PollyHealthChecks</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">ASP.NET Core health checks for Polly v8 circuit breakers</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyKafka" style="color:var(--brand-light);">PollyKafka</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Confluent.Kafka producers and consumers</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyMailKit" style="color:var(--brand-light);">PollyMailKit</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for MailKit SMTP sending</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyMassTransit" style="color:var(--brand-light);">PollyMassTransit</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Producer-side resilience for MassTransit IBus.Publish/Send</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyMediatR" style="color:var(--brand-light);">PollyMediatR</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience pipelines for any MediatR request handler</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyMongo" style="color:var(--brand-light);">PollyMongo</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilient MongoDB.Driver decorator for common IMongoCollection calls</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyNpgsql" style="color:var(--brand-light);">PollyNpgsql</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for Npgsql (PostgreSQL) with transient-error predicate</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyOpenAI" style="color:var(--brand-light);">PollyOpenAI</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for OpenAI/Azure OpenAI calls — 429 + Retry-After aware</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyRabbitMQ" style="color:var(--brand-light);">PollyRabbitMQ</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for RabbitMQ.Client's IChannel</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyRateLimiter" style="color:var(--brand-light);">PollyRateLimiter</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Fixed-window, token-bucket, sliding-window rate limiting for Polly v8</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollyRedis" style="color:var(--brand-light);">PollyRedis</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for StackExchange.Redis with DI integration</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollySendGrid" style="color:var(--brand-light);">PollySendGrid</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for SendGrid with 429/500/503 detection</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollySignalR" style="color:var(--brand-light);">PollySignalR</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Exponential back-off reconnect policy for SignalR, drop-in for WithAutomaticReconnect</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/PollySqlClient" style="color:var(--brand-light);">PollySqlClient</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Resilience for SQL Server / Azure SQL SqlConnection</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/Polly.Contrib.Bulkhead" style="color:var(--brand-light);">Polly.Contrib.Bulkhead</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Bulkhead isolation strategy for Polly v8 pipelines</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/Polly.Contrib.Caching" style="color:var(--brand-light);">Polly.Contrib.Caching</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Caching resilience strategy for Polly v8 pipelines</td></tr>
+            <tr><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/Polly-Contrib-OpenTelemetry" style="color:var(--brand-light);">Polly-Contrib-OpenTelemetry</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">OpenTelemetry instrumentation for Polly v8 pipelines</td></tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details style="margin-top:1rem;">
+        <summary style="cursor:pointer;color:var(--brand-light);font-weight:600;padding:0.5rem 0;">
+          EF Core extensions (8 packages) — compile-time, zero-reflection
+        </summary>
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:1rem;">
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.JsonColumn" style="color:var(--brand-light);">EFCore.JsonColumn</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[JsonColumn] generates OwnsOne(...ToJson()) configuration automatically</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.MultiTenant" style="color:var(--brand-light);">EFCore.MultiTenant</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[Tenant] source generator + save interceptor + automatic query filters</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.Outbox" style="color:var(--brand-light);">EFCore.Outbox</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Transactional outbox pattern for EF Core + MassTransit</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.Pagination" style="color:var(--brand-light);">EFCore.Pagination</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Offset and cursor (keyset) pagination — ToPageAsync / ToCursorPageAsync</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.RowVersion" style="color:var(--brand-light);">EFCore.RowVersion</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[Optimistic] generates RowVersion + client-wins/database-wins conflict handlers</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.Seeding" style="color:var(--brand-light);">EFCore.Seeding</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Fluent, idempotent, dependency-ordered seed data via IEntitySeed&lt;T&gt;</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.SoftDelete" style="color:var(--brand-light);">EFCore.SoftDelete</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[SoftDelete] generates IsDeleted/DeletedAt, interceptor, and global query filter</td></tr>
+            <tr><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/EFCore.StronglyTyped" style="color:var(--brand-light);">EFCore.StronglyTyped</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[StronglyTypedId] generates value types with EF Core converter + System.Text.Json support</td></tr>
+          </tbody>
+        </table>
+      </details>
+
+      <details style="margin-top:1rem;">
+        <summary style="cursor:pointer;color:var(--brand-light);font-weight:600;padding:0.5rem 0;">
+          More Auto* utilities &amp; test kits (6 packages)
+        </summary>
+        <table style="width:100%;border-collapse:collapse;font-size:0.9rem;margin-top:1rem;">
+          <tbody>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/AutoAuth" style="color:var(--brand-light);">AutoAuth</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Fluent configuration wrapper around OpenIddict &mdash; a Duende IdentityServer alternative</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/AutoAudit" style="color:var(--brand-light);">AutoAudit</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[Auditable] generates CreatedAt/UpdatedAt/CreatedBy/UpdatedBy + EF Core interceptor</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/AutoFeatureFlag" style="color:var(--brand-light);">AutoFeatureFlag</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">[FeatureFlags] on an enum generates a strongly-typed flags interface. No strings.</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/AutoGuard" style="color:var(--brand-light);">AutoGuard</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Compile-time guard clauses from primary constructor parameters &mdash; [NotNull]/[InRange]/[NotEmpty]/[Matches]</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/FluentExcel" style="color:var(--brand-light);">FluentExcel</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">Free, MIT-licensed fluent Excel generation &mdash; alternative to EPPlus's commercial subscription</td></tr>
+            <tr style="border-bottom:1px solid rgba(255,255,255,0.06);"><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/HttpClient.TestKit" style="color:var(--brand-light);">HttpClient.TestKit</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">FakeHttpMessageHandler for unit-testing HttpClient calls, zero dependencies</td></tr>
+            <tr><td style="padding:0.5rem 1rem;"><a href="https://github.com/Swevo/MassTransit.RequestClient.TestKit" style="color:var(--brand-light);">MassTransit.RequestClient.TestKit</a></td><td style="padding:0.5rem 1rem;color:var(--text-muted);">FakeRequestClient&lt;T&gt; / FakePublishEndpoint for unit-testing MassTransit without a real bus</td></tr>
+          </tbody>
+        </table>
+      </details>
+
+      <p style="margin-top:1.5rem;font-size:0.9rem;">
+        <a href="https://github.com/Swevo?tab=repositories" target="_blank" rel="noreferrer" style="color:var(--brand-light);">
+          Browse all repositories on GitHub &rarr;
+        </a>
+      </p>
     </div>
   </section>
 
